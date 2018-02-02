@@ -1,4 +1,5 @@
 #!/bin/bash
+#https://forums.kali.org/showthread.php?17668-Cleaner-for-Kali
 echo -e
 echo -e
 YELLOW="\033[1;33m"
