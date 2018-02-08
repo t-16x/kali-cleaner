@@ -8,7 +8,7 @@ ENDCOLOR="\033[0m"
 
                                                                                                                                                                                                                                          
 OLDCONF=$(dpkg -l|grep "^rc"|awk '{print $2}')
-CURKERNEL=$(uname -r|) #cut -f1,2 -d'-'
+CURKERNEL=$(uname -r) #cut -f1,2 -d'-'
 LINUXPKG="linux-(image|headers|debian-modules|restricted-modules)"
 METALINUXPKG="linux-(image|headers|restricted-modules)-(generic|i386|server|common|rt|xen)"
 #OLDKERNELS=$(dpkg -l|awk '{print $2}'|grep -E $LINUXPKG |grep -vE $METALINUXPKG|grep -v $CURKERNEL)
